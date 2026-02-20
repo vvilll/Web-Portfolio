@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .PageHead {
+            border: solid #252525;
+            border-radius: 100px;
+            margin-bottom: 1%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.873);
+            color: white;
+        }
+        #navDes {
+            border: solid #252525;
+            border-radius: 60px;
+            margin-left: 100px;
+            margin-bottom: 0;
+            padding: 10px;
+            background-color: rgba(63, 63, 63, 0.701);
+            border: solid 1px black; 
+            box-shadow: 1px 2px 2px rgb(13, 13, 13);
+        }
+        .navButton {
+            border: solid #252525;
+            border-radius: 20px;
+            margin-left: 60px;
+            margin-bottom: 0;
+            padding: 10px;
+            background-color: rgba(63, 63, 63, 0.701);
+            border: solid 1px black; 
+            box-shadow: 1px 2px 2px rgb(13, 13, 13);
+        }
+        .navButton:hover {
+            box-shadow: 1px 2px 3px rgb(13, 13, 13) inset;
+        }
+        .navButton a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #projImg {
+            width: auto;
+            height: 25vh;
+            box-shadow: 1px 2px 2px rgb(13, 13, 13);
+        }
+        .projectTable {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-spacing: 10px;
+            border: solid 1px black;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.873);
+            color: white;
+
+        }
+        .projDesc {
+            text-align: left; 
+            background-color: rgba(63, 63, 63, 0.701);
+            border: solid 1px black; 
+            box-shadow: 1px 2px 2px rgb(13, 13, 13);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="PageHead">
+        <div id="navDes">
+            <h1>Project Show Case</h1> 
+        </div>
+        <div class="navButton">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="navButton">
+            <a href="projects.html">Projects</a> 
+        </div>
+    </div>
+    <table class="projectTable">
+        <tr>
+            <th><h2>Hunting Season</h2></th>
+            <th><h2>Assembly Adventure Story</h2></th>
+            <th><h2>stegonography</h2></th>
+            <th><h2>Python Scraper</h2></th>
+        </tr>
+        <tr>
+            <th><img id="projImg" src="images/huntingSeasonProj.jpg" alt="developer"></th>
+            <th><img id="projImg" src="images/assemblyProj.jpg" alt="developer"></th>
+            <th><img id="projImg" src="images/stegoProj.jpg" alt="developer"></th>
+            <th><img id="projImg" src="images/pythonScrap.jpg" alt="developer"></th>
+        </tr>  
+        <tr>
+            <th class="projDesc">
+                <dl>
+                    <dt>A group coding project in which we created a top down survival game in c++ sfml based on the online game moomoo with rouguelike elements.</dt>
+                    <dd><a href="https://github.com/Narwhale14/ShooterGame">Learn More</a></dd>
+                </dl>
+            </th>
+            <th class="projDesc">
+                <dl>
+                    <dt>LC-3 assmebly choice based adventure game where the user is given differetn options that will take them down a variety of paths. The project incorporates ascii style art and animations.</dt>
+                    <dd><a href="https://github.com/vvilll/CS-155-Final-Project">Learn More</a></dd>
+                </dl>
+            </th>
+            <th class="projDesc">
+                <dl>
+                    <dt>A C++ stegonography program that accepts user input and hides the message into a bmp image.</dt>
+                    <dd><a href="https://github.com/vvilll/stego-PA4">Learn More</a></dd>
+                </dl>
+            </th>
+            <th class="projDesc">
+                <dl>
+                    <dt>Python web scrapper that a user can input a stock symbol from the world indicies. The scrapper will then gather the stock price from yahoo stocks and update a local file with the most recent price.</dt>
+                    <dd><a href="https://github.com/vvilll/pythonScrape">Learn More</a></dd>
+                </dl>
+            </th>
+        </tr>  
+    </table>
+</body>
+</html>
